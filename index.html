@@ -1,55 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Bootstrap 5 Website Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'> </script>
-  <link rel="stylesheet" href="index.css">
-</head>
-<body class="d-flex flex-column min-vh-100">
+  <style>
+      .col-sm-4{
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
 
+      .card{
+          height: 100%;
+      }
+      
+  </style>
+</head>
+<body class='d-flex flex-column min-vh-100'>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">ResourceFull</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Science</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Technology</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Engineering</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Mathematics</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Explore based on your interests</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Women in STEM</a>
-          </li>
-        </ul>
-      </div>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">ResourceFull</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="science.html">Science</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="technology.html">Technology</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="engineering.html">Engineering</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mathematics.html">Mathematics</a>
+      </li>
+    </ul>
   </div>
 </nav>
-    
+
+<div class="container-fluid text-center bg-white text-success">
+    <h4>This website helps you as a guide to pursue your career in Science, Technology, Engineering, Mathematics.</h4>
+    <p>It lets you choose a career path which suits your interests and also based on the subjects you like.</p>
+    <h5>Get some inspiration here!!!</h5>
+</div>
+
+<!---three columns rows-->
+<div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-body">
+                    <img src="https://obamawhitehouse.archives.gov/sites/default/files/image/doe_calutronpic_square.jpg" alt="Avatar" style="width:150px">
+                  <h4 class="card-title">Calutron Girls</h4>
+                  <p class="card-text">the “Calutron Girls” proved to be highly adept at operating the instruments and optimizing uranium production, achieving better rates for production than the male scientists they worked with.
+                    Isolating enriched uranium was one of the most difficult aspects of the Manhattan Project, which produced the first nuclear bombs during World War II. Wartime labor shortages led the Tennessee Eastman Company to recruit young women, who were mostly recent high school graduates, to operate the calutrons that used electromagnetic separation to isolate uranium.
+
+                  </p>
+                    <div class="container">
+                        <h5>Read More About Her</h5>
+                        <ul>
+                            <li>Resource 1 :<a href="https://en.wikipedia.org/wiki/Calutron_Girls">Wiki Link</a></li>
+                            <li>Resource 2 :<a href="https://exploreoakridge.com/who-were-the-calutron-girls-of-oak-ridge/">Oakridge</a></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-body">
+                    <img src="https://obamawhitehouse.archives.gov/sites/default/files/image/fbi_lillianmollergilbraith_square.jpg" alt="Avatar" style="width:150px">
+                  <h4 class="card-title">Lillian Gilbreth, American psychologist and industrial engineer</h4>
+                  <p class="card-text">She was an expert in efficiency and organizational psychology, she was the  first female commencement speaker at the University of California, first female engineering professor at Purdue, and first woman elected to the National Academy of Engineering.
+                      
+                  </p>
+                    <div class="container">
+                        <h5>Read More About Her</h5>
+                        <ul>
+                            <li>Resource 1 : <a href="https://en.wikipedia.org/wiki/Lillian_Moller_Gilbreth"> Wiki Link </a></li>
+                            <li>Resource 2 : <a href="https://www.britannica.com/biography/Lillian-Evelyn-Gilbreth"> Britannica </a></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-body">
+                    <img src="https://obamawhitehouse.archives.gov/sites/default/files/image/nsf_ellenochoa_square.jpg" alt="Avatar" style="width:150px">
+                  <h4 class="card-title">Ellen Ochoa, Astronaut</h4>
+                  <p class="card-text">Dr. Ellen Ochoa became the first Hispanic woman to go to space when she served on a nine-day mission aboard the space shuttle Discovery. She has flown in space four times, logging nearly 1,000 hours in orbit. Prior to her astronaut career, she was a research engineer and inventor, with three patents for optical systems. Ochoa is also the first Hispanic (and second female) to be named director of NASA’s Johnson Space Center.</p>
+                    <div class="container">
+                        <h5>Resources</h5>
+                        <ul>
+                            <li>Resource 1 <a href="https://en.wikipedia.org/wiki/Ellen_Ochoa"> Wiki Link </a></li>
+                            <li>Resource 2 <a href="https://www.nasa.gov/centers/johnson/about/people/orgs/bios/ochoa.html"> Nasa Link </a></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-body">
+                    <img src="https://obamawhitehouse.archives.gov/sites/default/files/women-in-stem/grace-hopper.jpg" alt="Avatar" style="width:150px">
+                  <h4 class="card-title">Grace Hopper, Computer Scientist</h4>
+                  <p class="card-text">She was at the forefront of computer and programming language development from the 1930s through the 1980s.
+                    One of the crowning achievements of her 44-year career was the development of computer languages written in English, rather than mathematical notation — most notably, the common business computing language known as COBOL, which is still in use today.</p>
+                    <div class="container">
+                        <h5>Resources</h5>
+                        <ul>
+                            <li>Resource 1 :<a href="https://en.wikipedia.org/wiki/Grace_Hopper">Wiki Link</a></li>
+                            <li>Resource 2 : <a href="https://news.yale.edu/2017/02/10/grace-murray-hopper-1906-1992-legacy-innovation-and-service">Yale News</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-body">
+                    <img src="https://obamawhitehouse.archives.gov/sites/default/files/women-in-stem/katherine-johnson.jpg" alt="Avatar" style="width:150px">
+                  <h4 class="card-title">Katherine Johnson</h4>
+                  <p class="card-text">Katherine Johnson, an African-American space scientist and mathematician, is a leading figure in American space history and has made enormous contributions to America’s aeronautics and space programs by her incorporation of computing tools. She played a huge role in calculating key trajectories in the Space Race -- calculating the trajectory for Alan Shepard, the first American in space, as well as for the 1969 Apollo 11 flight to the moon.
+                       Johnson is now retired, and continues to encourage students to pursue careers in science and technology fields.
+                  </p>
+                    <div class="container">
+                        <h5>Resources</h5>
+                        <ul>
+                            <li>Resource 1 :<a href="https://en.wikipedia.org/wiki/Katherine_Johnson">Wiki Link</a></li>
+                            <li>Resource 2 :<a href="https://www.nasa.gov/content/katherine-johnson-biography">Nasa</a></li>
+                          
+                        </ul>
+                    </div>
+                </div>
+              </div>
+        </div>
+       
+      </div>
+</div>
 
 
 
-    <div class="mt-auto text-light bg-dark ">
-        <p>Footer</p>
-    </div>
+</div>
 
 
+
+
+
+<div class="mt-auto p-4 bg-dark text-white text-center">
+  <p>Footer</p>
+</div>
 </body>
-<script src="script.js"></script>
+
+
 </html>
